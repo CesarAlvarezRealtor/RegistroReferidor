@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Registro para Referir</title>
+</head>
+<body>
+
+  <!--===========HEADER SECTION========-->
+  <section class="header" id="header">
+    <div class="header-container">
+      <h2>Cesar Alvarez <span> Inmobiliaria </span></h2>
+      <h1>Registro Para Referir</h1>
+      <img src="img/Copia de Logo-Blanco-Platinum-RGB-Centro.png" alt="">
+    </div>
+  </section>
+
+  <!--==========FORM SECTION===========-->
+  <section class="code-generator">
+    <div class="generator-box">
+      <form class="box-settings" name="randomGenerator">
+        <input type="button"   class="ref-btn"   value="Generar No. de Referidor" 
+        onclick="generateRandom();">
+        <br><br>
+        <h4  id="randomchar" type="number" class="randomchar" ></h4>
+      </form>
+    </div>
+  </section>
+
+
+  <section class="form-section">
+    <div class="form-container">
+      <form id="form" method="POST">
+        
+        <div class="field">
+          <label class="label">Nombre</label>
+          <div class="control">
+            <input
+            required
+              class="input"
+              type="text"
+              placeholder="Nombre y Apellido"
+              name="Nombre"
+            />
+          </div>
+        </div>
+  
+        <div class="field">
+          <label class="label">No. cel</label>
+          <div class="control">
+            <input
+            required
+              class="input"
+              type="text"
+              placeholder="# cel"
+              name="Celular"
+            />
+          </div>
+        </div>
+  
+        <div class="field">
+          <label class="label">No. Referidor</label>
+          <div class="control">
+            <input
+            required
+              class="input"
+              type="text"
+              placeholder="# ref"
+              name="Referido"
+            />
+          </div>
+        </div>
+  
+        
+        <div class="field">
+          <label class="label">Forma de Contacto</label>
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="Contacto" value="Whatsapp" /> Whatsapp
+            </label>
+            <label class="radio">
+              <input type="radio" name="Contacto" value="LLamada" /> LLamada
+            </label>
+          </div>
+        </div>
+  
+        <div class="field is-grouped">
+          <div class="control">
+            <button  type="submit" id="submit-button">
+              Guardar
+            </button>
+          </div>
+          
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="message-box">
+    <div class="message-text" id="message"></div>
+  </section>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
